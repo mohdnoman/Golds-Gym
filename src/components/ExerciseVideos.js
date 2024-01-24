@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 
 const ExerciseVideos = ({ exerciseVideos, name }) => {
-    if (!exerciseVideos.length) return (<Typography variant='h3'>Loading...</Typography>);
+    if (!exerciseVideos?.length) return (<Typography variant='h3'>Loading...</Typography>);
     return (
         <Box sx={{ mt: { lg: '100px', xs: '20px' } }} p={'20px'}>
             <Typography variant='h3' mb={'33px'}>
